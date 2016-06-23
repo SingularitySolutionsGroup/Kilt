@@ -54,7 +54,7 @@ module Kilt
       if Kilt.config.storage.strategy == 'local'
         "/uploads/#{type.to_s}/#{value.to_s}"
       elsif Kilt.config.storage.strategy == 's3'
-        "http://#{Kilt.config.s3.bucket}.s3.amazonaws.com/#{type.to_s}/#{value.to_s}"
+        "https://#{Kilt.config.s3.bucket}.s3.amazonaws.com/#{type.to_s}/#{value.to_s}"
       end
     end
     
